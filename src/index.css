@@ -1,0 +1,42 @@
+@import url('bootstrap');
+
+body {
+    font-family: 'Open Sans Variable', sans-serif;
+}
+
+#logo-header {
+    text-align: center;
+}
+
+.anchor-click {
+    display: flex;
+    justify-content: end;
+
+}
+
+.footer-img-tiny {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-img-tiny img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer-img-tiny span {
+    color: white;
+    font-size: 14px;
+}
+
+.second-block {
+    background-image: url("/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+p{
+    color: grey;
+}
