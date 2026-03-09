@@ -157,17 +157,17 @@ export default function AppMain() {
 
     return (
         <main className="bg-dark">
-            <img src="./jumbotron.jpg" className="jumbotron" alt="" />
+            <img src="./jumbotron.jpg" className="jumbotron" alt="main-img" />
             <div className="container">
                 <div className="row">
                     {
                         comics.map(comic => (
 
-                            <div className="col-12 col-md-6 col-lg-4 g-4" key={comic.id}>
+                            <div className="col-6 col-md-4 col-lg-2 g-4" key={comic.id}>
                                 <div className="card bg-transparent border-0 h-100">
-                                    <img className="card-img-top comic-img" src={comic.thumb} alt="" />
+                                    <img className="card-img-top comic-img" src={comic.thumb} alt={comic.title} />
                                     <div className="card-body">
-                                        <h3 className="text-white">{comic.series}</h3>
+                                        <h3 className="text-white title-comic">{comic.series}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -176,11 +176,6 @@ export default function AppMain() {
                     }
                 </div>
             </div>
-
-
-
-
-
 
         </main>
     )

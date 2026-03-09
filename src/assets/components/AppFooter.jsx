@@ -1,9 +1,123 @@
 export default function AppFooter() {
 
+    const linksColumnOne = [
+        {
+            id: 1,
+            text: 'Characters',
+            url: '/characters'
+        },
+        {
+            id: 2,
+            text: 'Movies',
+            url: '/movies'
+        },
+        {
+            id: 3,
+            text: 'TV',
+            url: '/tv'
+        },
+        {
+            id: 4,
+            text: 'Games',
+            url: '/games'
+        },
+        {
+            id: 5,
+            text: 'Videos',
+            url: '/videos'
+        },
+        {
+            id: 6,
+            text: 'News',
+            url: '/news'
+        }
+    ]
 
+    const linksColumnTwo = [
+        {
+            id: 1,
+            text: 'Terms Of Use',
+            url: '/terms-of-use'
+        },
+        {
+            id: 2,
+            text: 'Privacy policy(New)',
+            url: '/privacy-policy'
+        },
+        {
+            id: 3,
+            text: 'Ad Choices',
+            url: '/ad-choices'
+        },
+        {
+            id: 4,
+            text: 'Advertising',
+            url: '/advertising'
+        },
+        {
+            id: 5,
+            text: 'Jobs',
+            url: '/jobs'
+        },
+        {
+            id: 6,
+            text: 'Subscriptions',
+            url: '/subscriptions'
+        },
+        {
+            id: 7,
+            text: 'Talent Workshops',
+            url: '/talent-workshops'
+        },
+        {
+            id: 8,
+            text: 'CPSC Certificates',
+            url: '/cpsc-certificates'
+        },
+        {
+            id: 9,
+            text: 'Ratings',
+            url: '/ratings'
+        },
+        {
+            id: 10,
+            text: 'Shop Help',
+            url: '/shop help'
+        },
+        {
+            id: 11,
+            text: 'Contact Us',
+            url: '/contact-us'
+        }
+    ]
 
-
-
+    const linksColumnThree = [
+        {
+            id: 1,
+            text: 'DC',
+            url: '/dc'
+        },
+        {
+            id: 2,
+            text: 'MAD Magazine',
+            url: '/mad-magazine'
+        },
+        {
+            id: 3,
+            text: 'DC Kids',
+            url: '/dc-kids'
+        },
+        {
+            id: 4,
+            text: 'DC Universe',
+            url: '/dc-universe'
+        },
+        {
+            id: 5,
+            text: 'DC Power Visa',
+            url: '/dc-power-visa'
+        }
+    ]
 
     return (
         <>
@@ -44,41 +158,44 @@ export default function AppFooter() {
                     <div className="row p-4 justify-content-center">
                         <div className="col-2">
                             <h4 className="text-white">DC COMICS</h4>
-                            <p>Characters</p>
-                            <p>Movies</p>
-                            <p>TV</p>
-                            <p>Games</p>
-                            <p>Videos</p>
-                            <p>News</p>
-                            <h4 className="text-white">SHOP</h4>
-                            <p>Shop DC</p>
-                            <p>Shop DC Collectibles</p>
+
+                            {linksColumnOne.map(linkColumnOne => (
+                                <li key={linkColumnOne.id}>
+                                    <a href={linkColumnOne.url}>{linkColumnOne.text}</a>
+                                </li>
+                            ))}
+
+
+                            <h4 className="text-white pt-2">SHOP</h4>
+
+                            <a href="/shop dc">Shop DC</a>
+                            <br></br>
+                            <a href="/shop dc collectibles">Shop DC Collectibles</a>
+
+
                         </div>
 
                         <div className="col-2">
                             <h4 className="text-white">DC</h4>
-                            <p>Terms Of Use</p>
-                            <p>Privacy policy (New)</p>
-                            <p>Ad Choices</p>
-                            <p>Advertising</p>
-                            <p>Jobs</p>
-                            <p>Subscriptions</p>
-                            <p>Talent Workshops</p>
-                            <p>CPSC Certificates</p>
-                            <p>Ratings</p>
-                            <p>Shop Help</p>
-                            <p>Contact Us</p>
+
+                            {linksColumnTwo.map(linkColumnTwo => (
+                                <li key={linkColumnTwo.id}>
+                                    <a href={linkColumnTwo.url}>{linkColumnTwo.text}</a>
+                                </li>
+                            ))}
+
                         </div>
 
                         <div className="col-2">
                             <h4 className="text-white">SITES</h4>
-                            <p>DC</p>
-                            <p>MAD Magazine</p>
-                            <p>DC Kids</p>
-                            <p>DC Universe</p>
-                            <p>DC Power Visa</p>
-                        </div>
 
+                            {linksColumnThree.map(linkColumnThree => (
+                                <li key={linkColumnThree.id}>
+                                    <a href={linkColumnThree.url}>{linkColumnThree.text}</a>
+                                </li>
+                            ))}
+
+                        </div>
 
                         <div className="col-6">
                             <img src="./dc-logo-bg.png" alt="" className="img-fluid" />
