@@ -1,4 +1,10 @@
 export default function AppFooter() {
+
+
+
+
+
+
     return (
         <>
 
@@ -32,7 +38,7 @@ export default function AppFooter() {
                     </div>
                 </div>
             </footer>
-           
+
             <footer className="second-block">
                 <div className="container second-sect-footer">
                     <div className="row p-4 justify-content-center">
@@ -44,7 +50,7 @@ export default function AppFooter() {
                             <p>Games</p>
                             <p>Videos</p>
                             <p>News</p>
-                            <h4>SHOP</h4>
+                            <h4 className="text-white">SHOP</h4>
                             <p>Shop DC</p>
                             <p>Shop DC Collectibles</p>
                         </div>
@@ -75,12 +81,12 @@ export default function AppFooter() {
 
 
                         <div className="col-6">
-                            <img src="./dc-logo-bg.png" alt="" />
+                            <img src="./dc-logo-bg.png" alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>
             </footer>
-           
+
             <footer className="third-block bg-dark p-4">
                 <div className="container third-sect-footer">
                     <div className="row">
